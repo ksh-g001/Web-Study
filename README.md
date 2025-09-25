@@ -3,4 +3,5 @@ This repo saves my practices during the period when I participate at KT Cloud Te
 <divider/> 
 ### List
 | Folder Name | Description |
+|------|------|
 | cat_race_js | The First homework at the coding bootcamp. I had to create a vanilla website with pure HTML, CSS, and JavaScript without React.|
