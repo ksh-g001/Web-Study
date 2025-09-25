@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Race</title>
+    <link rel="icon" type="image/png" href="./assets/traffic_cone_icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div id="rolling-cat-left" style="display: flex; width: 40px; height: 40px; margin: 30px auto;"></div>
+        <div class="title">
+            <h1 id="game-title">고양이 레이스</h1>
+            <p id="game-title-en"><strong>Cat Race</strong></p>
+        </div>
+        <div id="rolling-cat-right" style="display: flex; width: 40px; height: 40px; margin: 30px auto;"></div>
+    </div>
+
+
+    <div class="dropdown-group">
+        <select id="catCountDropdown">
+            <option value="2">2마리</option>
+            <option value="3">3마리</option>
+            <option value="4">4마리</option>
+            <option value="5">5마리</option>
+            <option value="6">6마리</option>
+        </select>
+        <button id="startButton">Start</button>
+    </div>
+    <div id="catRaceContainer" class="cat-race-track-container" style="display: none;">
+        <div id="catLanesWrapper"></div>
+    </div>
+    <p id="raceStatusMessage" class="race-status-message" style="display: none;"></p>
+    <div id="rating" class="rating" style="display: none;">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.14/lottie.min.js"></script>
+    <script type="module" src="./src/race/speedCaculator.js"></script>
+    <script type="module" src="./src/race/race.js"></script>
+    <script type="module" src="./src/status/statusData.js"></script>
+    <script type="module" src="./src/status/power.js"></script>
+    <script type="module" src="./src/status/init.js"></script>
+    <script type="module" src="./src/uiData.js"></script>
+    <script type="module" src="./src/app.js"></script>
+
+</body>
+
+</html>
