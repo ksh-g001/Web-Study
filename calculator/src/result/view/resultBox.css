@@ -1,0 +1,17 @@
+.result-box{
+    display: flex;
+    height: 70px;
+    box-shadow: 4px var(--primary-500);
+    justify-content: flex-end;
+    align-items: center;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 8px;
+    background-color: var(--primary-50);
+    overflow: auto;
+}
+
+.result-text{
+    color: var(--text-secondary);
+}
+

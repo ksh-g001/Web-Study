@@ -1,0 +1,40 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: end;
+
+  --primary-50: #1f1d1d;
+  --primary-500: #463d3d;
+  --primary-600: #918582;
+  --primary-700: #ece8e8;
+
+  --color-success: #96dd7a;
+  --color-error: #d63c3c;
+  --color-warning: #e78534;
+
+  --text-primary: #2e2a2a;
+  --text-secondary: #ece8e8;
+}
+
+.whole-screen{
+  width: 90vw;
+  display: grid;
+  max-width: 1000px;
+  margin: 8dvh;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+}
+
+.calculator{
+  background-color: var(--primary-500);
+  border-radius: 16px;
+}
+
+.record{
+  max-width: 400px;
+  min-width: 100px;
+  max-height: 300px;
+  padding: 12px;
+  overflow: scroll;
+}

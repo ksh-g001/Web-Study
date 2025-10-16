@@ -1,0 +1,32 @@
+.record-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+.record-card{
+    display: flex;
+    flex-direction: column;
+    justify-self:end;
+}
+.record-delete-btn{
+    color: var(--text-secondary);
+    background-color: var(--primary-500);
+    padding: 4px;
+    width: 55px;
+    height: 35px;
+    font-size: small;
+    border-radius: 100px;
+}
+.record-small-container{
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+    justify-content: space-between;
+    align-items: center;
+}
+.record-text{
+    color: var(--text-secondary);
+}
+.record-date{
+    color: var(--primary-600);
+}
