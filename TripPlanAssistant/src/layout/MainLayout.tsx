@@ -1,9 +1,6 @@
 import { Button } from "@/components/ui/button"
 import DarkModeToggle from "../components/ui/DarkModeToggle.tsx"
 import { Outlet, useNavigate } from "react-router-dom"
-import { GiAirplaneDeparture } from "react-icons/gi"
-import { AirplayIcon } from "lucide-react"
-
 export default function MainLayout() {
     const nav = useNavigate()
 
@@ -19,7 +16,8 @@ export default function MainLayout() {
                         <nav className="flex items-center space-x-2">
                             <Button variant="ghost" size="sm"
                                 onClick={() => nav('/')}>홈</Button>
-                            <Button variant="ghost" size="sm">지도</Button>
+                            <Button variant="ghost" size="sm"
+                                onClick={() => nav('/map')}>지도</Button>
                         </nav>
                         <DarkModeToggle />
                     </div>
